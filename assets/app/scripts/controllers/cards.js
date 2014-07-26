@@ -10,7 +10,7 @@ function CardsCtrl($scope, apiService) {
 				for(i = 0; i < $scope.allCards.length; i++) {
 					$scope.allCards[i].start_date = $scope.parseDate($scope.allCards[i].start_date);
 					$scope.allCards[i].end_date = $scope.parseDate($scope.allCards[i].end_date);
-
+					$scope.allCards[i].price = $scope.allCards[i].price.toFixed(2);
 				}
 				$scope.errorMessage = '';
 			} else {

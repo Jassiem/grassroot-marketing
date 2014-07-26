@@ -11,12 +11,24 @@
 
 .title {
 	text-align: center;
+	padding-top: 5px;
 }
 
-.graphic, .description {
+.graphic{
 	padding-left: 10px;
+}
+
+.description {
+	padding-left: 15px;
 }
 
 .start, .end{
 	margin: 0 0 2px 0;
+}
+
+.price {
+	color: #8A1222;
+	font-weight: bold;
+	font-family: Helvetica sans-serif;
+	font-size: 16px;
 }
