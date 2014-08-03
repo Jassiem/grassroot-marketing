@@ -19,8 +19,8 @@
 }
 
 .graphic img {
-	width: 160px;
-	height: 90px;
+	width: 220px;
+	height: auto;
 }
 
 .description {
@@ -37,4 +37,15 @@
 	font-weight: bold;
 	font-family: Helvetica sans-serif;
 	font-size: 16px;
+}
+
+.banner-top {
+	position: absolute;
+	top: 0;
+	margin-bottom: 15px;
+}
+
+.banner-top img {
+	width: 95%;
+	height: auto;
 }
