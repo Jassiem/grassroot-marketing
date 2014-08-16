@@ -5,7 +5,9 @@ function MainCtrl($scope, apiService, $location, $timeout) {
   $scope.isUser = false;
 
   $scope.init = function() {
-  	document.addEventListener('deviceready', $scope.checkUserStatus(), false);
+    console.log("finished main.");
+    $scope.checkUserStatus();
+  	//document.addEventListener('deviceready', $scope.checkUserStatus(), false);
   };
 
   $scope.checkUserStatus = function() {
@@ -21,6 +23,8 @@ function MainCtrl($scope, apiService, $location, $timeout) {
   			$location.url('/cards');
   		}
   	}
+
+    console.log("finished checking usr status.");
   };
 
   $scope.init();

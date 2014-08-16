@@ -2,7 +2,7 @@
 	background: rgba(34, 34, 34, .6);
 	color: #fff;
 	width: 95%;
-	margin: 0 auto 15px auto;
+	margin: 20px auto 15px auto;
 }
 
 .row {
@@ -42,10 +42,14 @@
 .banner-top {
 	position: absolute;
 	top: 0;
-	margin-bottom: 15px;
+	margin-bottom: 0 auto 15px auto;
+	width: 95%;
+	display: block;
 }
 
 .banner-top img {
-	width: 95%;
-	height: auto;
+	width: 50%;
+	height: 100px;
+	margin-left: 25%;
+	margin-right: 25%;
 }
