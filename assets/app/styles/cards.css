@@ -2,7 +2,7 @@
 	background: rgba(34, 34, 34, .6);
 	color: #fff;
 	width: 95%;
-	margin: 20px auto 15px auto;
+	margin: 40px auto 15px auto;
 }
 
 .row {
@@ -24,7 +24,8 @@
 }
 
 .description {
-	padding-left: 15px;
+	font-size: 8px;
+	word-wrap: break-word;
 }
 
 .start, .end{
@@ -40,16 +41,19 @@
 }
 
 .banner-top {
-	position: absolute;
+	background-color: white;
+	position: fixed;
 	top: 0;
-	margin-bottom: 0 auto 15px auto;
-	width: 95%;
-	display: block;
+	margin-bottom: 60px;
+	left: 0;
+	right: 0;
+	z-index: 10;
 }
 
 .banner-top img {
-	width: 50%;
-	height: 100px;
-	margin-left: 25%;
-	margin-right: 25%;
+	height: 50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
 }
