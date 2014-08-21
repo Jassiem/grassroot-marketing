@@ -2,6 +2,7 @@
 	<img src="../app/images/silver_star_logo.jpg"/>
 </div>
 <div class='card' ng-repeat='card in allCards'>
+	<div class='space' ng-if="$index == 0"> </div>
 	<h2 class='title'> {{card.title}} </h2>
 	<hr/>
 	<div class='row'>
@@ -35,4 +36,7 @@
 			</div>
 		</div>
 	</div>
+</div>
+<div class='banner-bottom'>
+	Powered By: <img src="../app/images/mas_logo.jpg"/>
 </div>
