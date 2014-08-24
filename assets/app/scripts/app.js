@@ -16,6 +16,10 @@ var grassroot = angular.module('grassroot', ['ngCookies','ngResource','ngSanitiz
         templateUrl: 'views/register.html',
         controller: 'RegisterCtrl'
       })
+      .when('/barcode', {
+        templateUrl: 'views/barcode.html',
+        controller: 'BarcodeCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

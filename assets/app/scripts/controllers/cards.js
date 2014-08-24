@@ -1,4 +1,4 @@
-function CardsCtrl($scope, apiService) {
+function CardsCtrl($scope, apiService, barcodeService, $location) {
 	$scope.allCards = [];
 	$scope.daysOfTheWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
 
@@ -30,7 +30,14 @@ function CardsCtrl($scope, apiService) {
 
 		formattedDate = month + '/' + day + '/' + year;
 		return formattedDate;
+  };
+
+  /* Naming is rather unintuitive. Refactor */
+  $scope.getBarcodeImage = function(productNumber) {
+  	barcodeService.setBarcode(productNumber);
+  	$location.url('/barcode');
   }
+
 };
 
-CardsCtrl.$inject = ['$scope', 'apiService'];
+CardsCtrl.$inject = ['$scope', 'apiService', 'barcodeService', '$location'];

@@ -7,7 +7,9 @@
 	<hr/>
 	<div class='row'>
 		<div class='col-xs-9 graphic'>
-			<img ng-src='{{card.graphic_file_name}}'/>
+			<a ng-click='getBarcodeImage(card.product_number)'> 
+				<img ng-src='{{card.graphic_file_name}}'/>
+			</a>
 		</div>
 		<div class='col-xs-3'>
 			<p class='description'> {{card.description}} </p>
