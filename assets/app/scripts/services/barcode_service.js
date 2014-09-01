@@ -1,6 +1,6 @@
 // Service definition
 grassroot.service('barcodeService', ['$http', function($http){
-  var API_DOMAIN = "http://barcodes4.me/barcode/c39/";
+  var API_DOMAIN = "http://barcodes4.me/barcode/i2of5/";
   var image_type = '.png';
   var barcodeUrl = '';
 
