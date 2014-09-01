@@ -11,6 +11,10 @@ function CardsCtrl($scope, apiService, barcodeService, $location) {
 					$scope.allCards[i].start_date = $scope.parseDate($scope.allCards[i].start_date);
 					$scope.allCards[i].end_date = $scope.parseDate($scope.allCards[i].end_date);
 					$scope.allCards[i].price = $scope.allCards[i].price.toFixed(2);
+
+					if($scope.allCards[i].description == "undefined") {
+						$scope.allCards[i].description = '';
+					}
 				}
 				$scope.errorMessage = '';
 			} else {
@@ -24,7 +28,7 @@ function CardsCtrl($scope, apiService, barcodeService, $location) {
   $scope.parseDate = function(unformattedDate) {
 		var date = new Date(unformattedDate);
 
-		var month = date.getMonth();
+		var month = date.getMonth() + 1;
 		var day = date.getDate();
 		var year = date.getFullYear();
 
